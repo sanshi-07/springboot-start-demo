@@ -1,0 +1,8 @@
+server:
+  port: 3801
+com:
+  example:
+    enabled: true  #配置bean属性，因为这里我们提前加上注解 @ConfigurationProperties("com.example")
+    host: 127.0.0.1
+    port: 3801
+
