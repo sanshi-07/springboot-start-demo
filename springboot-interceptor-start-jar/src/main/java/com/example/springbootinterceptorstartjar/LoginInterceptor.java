@@ -32,7 +32,7 @@ public class LoginInterceptor implements HandlerInterceptor {
                 voucher.setAppCode("xxxx");
                 //判断session中是否有用户数据，如果有，则返回true，继续向下执行
                 if (voucher != null) {
-                       // 调用我们第三方接口鉴权
+                       // 调用我们第三方接口鉴权 接口调用选择http dubbo？  请求地址配在第三方资源文件中
                         System.out.println("鉴权"+voucher.toString());
                         //成功与否调用记日志接口   这里有疑惑每次鉴权都做？
                         return true;
