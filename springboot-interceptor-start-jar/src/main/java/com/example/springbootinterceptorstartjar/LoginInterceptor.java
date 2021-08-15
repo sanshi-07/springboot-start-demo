@@ -23,6 +23,7 @@ public class LoginInterceptor implements HandlerInterceptor {
                     }
                 //获取session 这里用户名从cookie中获得
                 // Cookie[] cookies = request.getCookies();
+                // 这里需要确定用户名的存储位置
                 HttpSession session = request.getSession();
                 String username = (String) session.getAttribute("USER_NAME");
                 Voucher voucher = new Voucher();
